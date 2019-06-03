@@ -9,7 +9,11 @@ class Dog
   end
   
   def self.all 
-    puts @@all
+    all = []
+    @@all.each do |object|
+      all << object.name 
+    end
+    puts all
   end
   
   def self.clear_all 
